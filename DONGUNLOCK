@@ -8,8 +8,9 @@ bypass-system = true
 skip-proxy = *.local, *.crashlytics.com
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
 update-url = https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/DONGUNLOCK
+
 [Script]
-DongWelcome = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/welcome.js
+welcome = type=http-request,pattern=^https:\/\/www\.google\.com,script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/welcometest.js
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
 AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
