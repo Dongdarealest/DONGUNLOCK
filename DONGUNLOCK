@@ -1,7 +1,8 @@
 #!name = DONGDAREALEST - UNLOCK
 #!desc = UNLOCK APP
 #!author = DONGDAREALEST
-
+#!homepage=https://github.com/Dongdarealest
+#!icon=https://github.com/Dongdarealest/DONGUNLOCK/blob/main/premium.png
 [General]
 bypass-system = true
 skip-proxy = *.local, *.crashlytics.com
