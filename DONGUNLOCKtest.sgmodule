@@ -2,7 +2,7 @@
 #!desc=Hệ thống mở khóa tính năng Premium iOS.
 #!author=DONGDAREALEST
 #!homepage=https://github.com/Dongdarealest
-#!icon=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/premium.png
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Premium.png
 
 [Header Rewrite]
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
