@@ -1,5 +1,5 @@
-#!name=DONGDAREALEST - UNLOCK
-#!desc=UNLOCK APP
+#!name= DONGDAREALEST - UNLOCK
+#!desc=Hệ thống mở khóa tính năng Premium iOS.
 #!author=DONGDAREALEST
 #!homepage=https://github.com/Dongdarealest
 #!icon=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/premium.png
@@ -15,16 +15,16 @@ https://ahrefs.com/writing-tools/paragraph-rewriter
 ^https?://(www|s)\.youtube\.com/api/stats/ads _ reject-200
 ^https?://(www|s)\.youtube\.com/(pagead|ptracking) _ reject-200
 ^https?://s\.youtube\.com/api/stats/qoe\?adcontext _ reject-200
-https?:\/\/.+\.googlevideo\.com\/.+&oad reject HEADER
-https?:\/\/.+\.googlevideo\.com\/ptracking\?pltype=adhost reject header
-https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat reject header
-https?:\/\/.+\.youtube\.com\/api\/stats\/ads reject header
-https?:\/\/.+\.youtube\.com\/get_midroll reject header
-https?:\/\/.+\.youtube\.com\/pagead\/ reject header
-https?:\/\/.+\.youtube\.com\/ptracking\? reject header
-https?:\/\/m\.youtube\.com\/_get_ads reject header
-https?:\/\/s\.youtube\.com\/api\/stats\/watchtime?adformat reject header
-https?:\/\/youtubei\.googleapis\.com/.+ad_break reject header
+https?:\/\/.+\.googlevideo\.com\/.+&oad _ reject
+https?:\/\/.+\.googlevideo\.com\/ptracking\?pltype=adhost _ reject
+https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat _ reject
+https?:\/\/.+\.youtube\.com\/api\/stats\/ads _ reject
+https?:\/\/.+\.youtube\.com\/get_midroll _ reject
+https?:\/\/.+\.youtube\.com\/pagead\/ _ reject
+https?:\/\/.+\.youtube\.com\/ptracking\? _ reject
+https?:\/\/m\.youtube\.com\/_get_ads _ reject
+https?:\/\/s\.youtube\.com\/api\/stats\/watchtime?adformat _ reject
+https?:\/\/youtubei\.googleapis\.com/.+ad_break _ reject
 
 [Script]
 DongWelcome = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/welcome.js
@@ -35,26 +35,19 @@ youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com
 youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/youtube.response.js,argument="{"lyricLang":"vi","captionLang":"vi","blockUpload":true,"blockImmersive":true,"debug":false}"
 spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
 spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://shoptnetz.com/shadowrocket/Locket_Gold.js, requires-body=true, max-size=-1, timeout=60
-deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://shoptnetz.com/shadowrocket/delete_header.js, timeout=60
-http-response ^https://api\.revenuecat\.com/.+/(receipts$|subscribers/[^/]+$) script-path = https://shoptnetz.com/shadowrocket/crack.js, requires-body=true, timeout=5, tag=Crack
-http-request ^https://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) script-path = https://shoptnetz.com/shadowrocket/VSCO.js, requires-body=true, timeout=5, tag=VSCO
+revenuecat = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$),script-path=https://shoptnetz.com/shadowrocket/Locket_Gold.js,requires-body=true,max-size=-1,timeout=60
+deleteHeader = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers),script-path=https://shoptnetz.com/shadowrocket/delete_header.js,timeout=60
+Crack = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$),script-path=https://shoptnetz.com/shadowrocket/crack.js,requires-body=true,timeout=5
+VSCO = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),script-path=https://shoptnetz.com/shadowrocket/VSCO.js,requires-body=true,timeout=5
+Sandbox = type=http-response,pattern=https:\/\/api\.sandbox\.love\/accounts\/current,script-path=https://shoptnetz.com/shadowrocket/SandBox.js,requires-body=true,timeout=5
 PicsArt = type=http-request,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/PicsArt.js,requires-body=true,timeout=60
 Wink = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/WinkVipCrack.js
 AlightMotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,requires-body=true,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/AlightMotion.js
-http-response https://api.sandbox.love/accounts/current script-path = https://shoptnetz.com/shadowrocket/SandBox.js, requires-body=true, timeout=5, tag=Sandbox Pixel Art
-SoundCloudGo+ = type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/soundcloud.js
+SoundCloudGo = type=http-response,pattern=https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/soundcloud.js
 Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v\d\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/lightroom.js,script-update-interval=-1
 deepfaker = type=http-response,pattern=^https:\/\/api\.deepfaker\.app\/api\/v1\/account\/update-profile,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/deepfaker.js
-Piccollage_Unlock = type=http-response,pattern=https://piccollage.com/api/graphql,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/picCollage.js
-AlohaVPN = type=http-response,pattern=https://api.alohaprofile.com/v1/profile_info,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/aloha.js
+Piccollage_Unlock = type=http-response,pattern=https:\/\/piccollage\.com\/api\/graphql,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/picCollage.js
+AlohaVPN = type=http-response,pattern=https:\/\/api\.alohaprofile\.com\/v1\/profile_info,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/aloha.js
 iScreenn = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/iScreenn.js
-Usage = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/Usage.js
-MeituPic = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/MeiTuXiuXiu.js
-Truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products\/apple),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
-Kinemaster = type=http-response,pattern=^https:\/\/api-account\.kinemasters\.com\/v\d\/user\/subscribe$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Kinemaster.js
-Camscanner = type=http-response,pattern=https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/camScanner.js
-BeautyPlus = type=http-response,pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance),requires-body=true,max-size=-1,timeout=60,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/BeautyPlus.js
-
-[MITM]
-hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, api.picsart.com, us-central1-alight-creative.cloudfunctions.net, api.adapty.io, carrotweather.herokuapp.com, order.creativeappnow.com, api.mwm-users.com, us-central1-muslim-pro-app.cloudfunctions.net, api.gptkeyboard.app, prod.studysmarter.de, api.qonversion.io, api.blinkist.com, subscription.grammarly.com, api.esound.app, api.purchasely.io, api-sub.meitu.com, redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api-mobile.soundcloud.com, photos.adobe.io, api.deepfaker.app, purchases.ws.pho.to, pro.smallpdf.com, api.alohaprofile.com, piccollage.com, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, premium*.truecaller.com, api-account.kinemasters.com, ap*.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com
+Usage = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v1\/subscribers\.+,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/Usage.js
+MeituPic = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|
