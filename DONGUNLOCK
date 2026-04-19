@@ -7,8 +7,7 @@
 bypass-system = true
 skip-proxy = *.local, *.crashlytics.com
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
-update-url = https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/DONGUNLOCK
-
+update-url = https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/DONGUNLOCK, update-interval=43200
 
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
@@ -111,3 +110,5 @@ ca-p12 = MIIJqgIBAzCCCWkGCSqGSIb3DQEHAaCCCVoEgglWMIIJUjCCB9kGCSqGSIb3DQEHBqCCB8o
 enable = true
 hostname = %APPEND%api.revenuecat.com,buy.itunes.apple.com,api.picsart.com,us-central1-alight-creative.cloudfunctions.net,api.adapty.io,carrotweather.herokuapp.com,order.creativeappnow.com,api.mwm-users.com,us-central1-muslim-pro-app.cloudfunctions.net,api.gptkeyboard.app,prod.studysmarter.de,api.qonversion.io,api.blinkist.com,subscription.grammarly.com,api.esound.app,api.purchasely.io,spclient.wg.spotify.com,api-sub.meitu.com,redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,api-mobile.soundcloud.com,photos.adobe.io,api.deepfaker.app,purchases.ws.pho.to,pro.smallpdf.com,api.alohaprofile.com,piccollage.com,h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,premium*.truecaller.com,api-account.kinemasters.com,ap*.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, spclient.wg.spotify.com, *spclient.spotify.com
 ,
+[Panel]
+DONGUNLOCK_INFO = title=" DONGDAREALEST", content="Hệ thống Unlock Premium đang hoạt động. Server được tối ưu hóa cho YouTube, Spotify & 20+ Apps.", style=info
