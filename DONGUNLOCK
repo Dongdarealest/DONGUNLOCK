@@ -4,6 +4,7 @@
 #!homepage=https://github.com/Dongdarealest
 #!icon = https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/premium.png
 [General]
+DONGUNLOCK_Panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/welcome.js
 bypass-system = true
 skip-proxy = *.local, *.crashlytics.com
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
