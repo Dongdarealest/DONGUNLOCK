@@ -6,7 +6,12 @@ skip-proxy = *.local, *.crashlytics.com
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
 update-url = https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/DONGUNLOCK
 
+[Proxy Group]
+🚀 DONGDA FAST = select, Proxy1, Proxy2
+🔥 GAMING MODE = url-test, Proxy3, Proxy4
+
 [Rule]
+DOMAIN-SUFFIX,example.com,REJECT
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
 AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
