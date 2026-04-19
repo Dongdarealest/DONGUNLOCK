@@ -8,6 +8,9 @@ DONGUNLOCK_Panel = type=generic,timeout=10,script-path=https://raw.githubusercon
 bypass-system = true
 skip-proxy = *.local, *.crashlytics.com
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
+dns-server = https://dns.alidns.com/dns-query, https://dns.cloudflare.com/dns-query, 8.8.8.8, 1.1.1.1
+fallback-dns-server = 8.8.4.4
+ipv6 = false
 update-url = https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/DONGUNLOCK, update-interval=43200
 
 [Rule]
