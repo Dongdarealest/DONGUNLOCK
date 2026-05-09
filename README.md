@@ -1,77 +1,56 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/premium.png" width="160">
+
 #  DONGDAREALEST - UNLOCK
 
-### Premium Configuration for Shadowrocket iOS
+### PREMIUM EXPERIENCE FOR SHADOWROCKET IOS
 
-Ổn định • Tối ưu • Chặn quảng cáo • Hỗ trợ nhiều ứng dụng
-
-<img src="https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/premium.png" width="200">
+<p>
+Ổn định • Tối ưu • Chặn quảng cáo • Unlock nhiều ứng dụng
+</p>
 
 <br>
 
-![iOS](https://img.shields.io/badge/iOS-15+-black?style=for-the-badge)
-![Shadowrocket](https://img.shields.io/badge/Shadowrocket-Compatible-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+<img src="https://img.shields.io/badge/iOS-15+-black?style=for-the-badge">
+<img src="https://img.shields.io/badge/Shadowrocket-Compatible-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Status-ONLINE-success?style=for-the-badge">
 
 </div>
 
 ---
 
-# 📌 Giới thiệu
+# ✨ GIỚI THIỆU
 
-DONGDAREALEST - UNLOCK là cấu hình dành cho Shadowrocket trên iOS, được xây dựng nhằm tối ưu trải nghiệm sử dụng ứng dụng, hỗ trợ nhiều module phổ biến và giảm quảng cáo trong quá trình sử dụng.
-
-Config hoạt động thông qua:
-- HTTPS MITM
-- Rewrite Rules
-- Script Injection
-- API Response Modification
-
-Mục tiêu của project:
-- Dễ cài đặt
-- Dễ sử dụng
-- Hoạt động ổn định
-- Tập trung trải nghiệm người dùng
+> Một cấu hình Shadowrocket được tối ưu dành cho iOS, tập trung vào:
+>
+> - trải nghiệm ổn định  
+> - hỗ trợ nhiều module  
+> - giảm quảng cáo  
+> - tối ưu kết nối  
+> - dễ cài đặt và dễ sử dụng  
 
 ---
 
-# ✨ Tính năng
+# 🚀 TÍNH NĂNG
 
-## 🎥 Giải trí
-- YouTube Premium Experience
-- Spotify Premium Features
-- SoundCloud Go+
-- Chặn quảng cáo YouTube
-- Chặn tracking cơ bản
+<div align="center">
 
----
+| 🎥 Giải trí | 📸 Sáng tạo | 🌐 Hệ thống |
+|:--:|:--:|:--:|
+| YouTube | Lightroom | DNS Tối Ưu |
+| Spotify | PicsArt | Chặn Tracking |
+| SoundCloud | VSCO | HTTPS MITM |
+| Locket Gold | Alight Motion | Rewrite Rules |
+| Chặn Ads | BeautyPlus | Stable Connection |
 
-## 📸 Chỉnh sửa ảnh & video
-- PicsArt Premium
-- Lightroom Premium
-- Wink VIP
-- Alight Motion
-- Kinemaster
-- VSCO
-- BeautyPlus
-- CamScanner
-- PicCollage
+</div>
 
 ---
 
-## 🌐 Khác
-- Locket Gold
-- DNS tối ưu
-- Giảm tracking
-- Tối ưu kết nối
-- Hỗ trợ nhiều module trong cùng một config
+# 📥 IMPORT CONFIG
 
----
-
-# 📥 Import Config
-
-## Link Config
+## 🔗 LINK CONFIG
 
 ```txt
 https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/DONGUNLOCK
@@ -79,19 +58,19 @@ https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/DONGUNLOCK
 
 ---
 
-## 🚀 Import nhanh bằng Safari
+## ⚡ IMPORT NHANH BẰNG SAFARI
 
 ```txt
 shadowrocket://add/sub://https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/main/DONGUNLOCK
 ```
 
-Dán link trên vào Safari để import trực tiếp vào Shadowrocket.
+> Dán link trên vào Safari để import trực tiếp vào Shadowrocket.
 
 ---
 
-# 📱 Hướng dẫn cài đặt
+# 📱 HƯỚNG DẪN CÀI ĐẶT
 
-# BƯỚC 1 — TẢI SHADOWROCKET
+# ① TẢI SHADOWROCKET
 
 Nếu chưa có ứng dụng Shadowrocket:
 
@@ -99,14 +78,14 @@ Nếu chưa có ứng dụng Shadowrocket:
 
 [DVsTeam - ID Apple Shadowrocket](https://dvsteam.vn/id-apple-shadowrocket?fbclid=PAVERFWARYQndleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadcLf2SchaL9GESWSbnOOzvS5CpN6cmZjk69WOpoiQ01m8FU7W-6IUdgLQLxw_aem_wO-TZgDf1uvX2t6QwW21Pg&utm_source=chatgpt.com)
 
-Sau khi tải:
-- có thể đăng xuất App Store
-- đăng nhập lại tài khoản cá nhân bình thường
+### Sau khi tải:
+- Có thể đăng xuất App Store
+- Đăng nhập lại tài khoản cá nhân
 - Shadowrocket vẫn hoạt động bình thường
 
 ---
 
-# BƯỚC 2 — IMPORT CONFIG
+# ② IMPORT CONFIG
 
 Mở Shadowrocket:
 
@@ -127,7 +106,7 @@ Sau đó:
 
 ---
 
-# BƯỚC 3 — CÀI CHỨNG CHỈ HTTPS
+# ③ CÀI CHỨNG CHỈ HTTPS
 
 Trong Shadowrocket:
 
@@ -141,7 +120,7 @@ Sau đó:
 
 ---
 
-# BƯỚC 4 — TIN CẬY CHỨNG CHỈ
+# ④ TIN CẬY CHỨNG CHỈ
 
 Vào:
 
@@ -154,13 +133,9 @@ Bật:
 Shadowrocket Certificate
 ```
 
-⚠️ Nếu chưa bật bước này:
-- script sẽ không hoạt động đúng
-- nhiều module sẽ không hoạt động
-
 ---
 
-# BƯỚC 5 — BẬT HTTPS DECRYPTION
+# ⑤ BẬT HTTPS DECRYPTION
 
 Trong Shadowrocket:
 
@@ -170,7 +145,7 @@ Settings → HTTPS Decryption → ON
 
 ---
 
-# BƯỚC 6 — BẬT VPN
+# ⑥ BẬT VPN
 
 Tại màn hình chính Shadowrocket:
 - bật kết nối
@@ -181,24 +156,26 @@ Tại màn hình chính Shadowrocket:
 # ✅ HOÀN TẤT
 
 Sau khi hoàn tất:
-- mở lại các ứng dụng cần sử dụng
-- nếu chưa nhận tính năng hãy thử:
-  - tắt mở lại app
+- mở lại các ứng dụng cần dùng
+- nếu chưa nhận tính năng:
+  - tắt mở app
   - đăng nhập lại
   - restart thiết bị
 
 ---
 
-# ⚠️ Lưu ý
+# ⚠️ LƯU Ý
 
+```diff
 - Khuyến nghị iOS 15+
 - Không bật nhiều config tương tự cùng lúc
-- Một số ứng dụng có thể thay đổi theo phiên bản
-- Một số script có thể cần cập nhật theo thời gian
+- Một số module có thể thay đổi theo phiên bản ứng dụng
+- Một số script cần cập nhật theo thời gian
+```
 
 ---
 
-# 🔄 Cập nhật
+# 🔄 CẬP NHẬT
 
 Config sẽ được cập nhật thường xuyên để:
 - sửa lỗi
@@ -208,25 +185,34 @@ Config sẽ được cập nhật thường xuyên để:
 
 ---
 
-# 🛠 GitHub
+# 🛠 GITHUB
+
+<div align="center">
 
 [DONGDAREALEST GitHub](https://github.com/Dongdarealest?utm_source=chatgpt.com)
 
+</div>
+
 ---
 
-# ❤️ Credits
+# ❤️ CREDITS
 
-Special thanks:
-- app2smile
-- duyvinh09
-- shoptnetz
-- Sub-Store
-- open-source community
+<div align="center">
+
+Special Thanks To
+
+`app2smile` • `duyvinh09` • `shoptnetz` • `Sub-Store`
+
+and the open-source community.
+
+</div>
 
 ---
 
 <div align="center">
 
-### Made with  by DONGDAREALEST
+# 
+
+### MADE WITH PASSION BY DONGDAREALEST
 
 </div>
