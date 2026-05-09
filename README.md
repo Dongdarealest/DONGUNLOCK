@@ -11,7 +11,15 @@
 </p>
 
 <br>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Dongdarealest&repo=DONGUNLOCK&label=VIEWS&color=blueviolet&style=for-the-badge">
+</p>
 
+<p align="center">
+  <a href="https://dongdarealest.github.io/DONGUNLOCK/">
+    <img src="https://img.shields.io/badge/OPEN-WEBSITE-2563eb?style=for-the-badge">
+  </a>
+</p
 <img src="https://img.shields.io/badge/iOS-15+-black?style=for-the-badge">
 <img src="https://img.shields.io/badge/Shadowrocket-Compatible-blue?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-ONLINE-success?style=for-the-badge">
