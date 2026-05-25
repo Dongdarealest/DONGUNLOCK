@@ -4,7 +4,7 @@
 bypass-system = true
 skip-proxy = *.local, *.crashlytics.com
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
-update-url = https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/DONGUNLOCK
+update-url = https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/DONGDAREALEST%20-%20UNLOCK
 
 [Proxy Group]
 🚀 DONGDA FAST = select, Proxy1, Proxy2
@@ -36,8 +36,8 @@ https?:\/\/youtubei\.googleapis\.com/.+ad_break reject header
 # YouTube AdBlocker
 youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine=script,script-path=https://shoptnetz.com/shadowrocket/youtube.request.preview.js
 youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine=script,script-path=https://shoptnetz.com/shadowrocket/youtube.response.preview.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":true,\"blockImmersive\":true,\"debug\":false}"
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://shoptnetz.com/shadowrocket/Locket_Gold.js, requires-body=true, max-size=-1, timeout=60
-deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://shoptnetz.com/shadowrocket/delete_header.js, timeout=60
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/locket/locketgold.js, requires-body=true, max-size=-1, timeout=60
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/locket/deleteHeader.js, timeout=60
 http-response ^https://api\.revenuecat\.com/.+/(receipts$|subscribers/[^/]+$) script-path = https://shoptnetz.com/shadowrocket/crack.js, requires-body=true, timeout=5, tag=Crack
 http-request ^https://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) script-path = https://shoptnetz.com/shadowrocket/VSCO.js, requires-body=true, timeout=5, tag=VSCO
 # Unlock các ứng dụng khác
