@@ -53,7 +53,7 @@ spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|
 spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://github.com/Dongdarealest/DONGUNLOCK/blob/main/spotify/spotify_proto.js,script-update-interval=0
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/locket/locketgold.js, requires-body=true, max-size=-1, timeout=60
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/locket/deleteHeader.js, timeout=60
-http-response ^https://api\.revenuecat\.com/.+/(receipts$|subscribers/[^/]+$) script-path = https://shoptnetz.com/shadowrocket/crack.js, requires-body=true, timeout=5, tag=Crack
+http-response ^https://api\.revenuecat\.com/.+/(receipts$|subscribers/[^/]+$) script-path = https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/module/crack.js, requires-body=true, timeout=5, tag=Crack
 http-request ^https://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) script-path = https://shoptnetz.com/shadowrocket/VSCO.js, requires-body=true, timeout=5, tag=VSCO
 # Unlock các ứng dụng khác
 #PicsArt
@@ -72,7 +72,7 @@ http-response https://api.sandbox.love/accounts/current script-path = https://sh
 SoundCloudGo+ = type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/soundcloud.js
 
 #Lightroom
-Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v\d\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/lightroom.js,script-update-interval=-1
+Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v\d\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/module/lightroom.js,script-update-interval=-1
 
 #Deepfaker
 deepfaker = type=http-response,pattern=^https:\/\/api\.deepfaker\.app\/api\/v1\/account\/update-profile,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/deepfaker.js
