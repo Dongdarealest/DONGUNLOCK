@@ -63,13 +63,13 @@ PicsArt = type=http-request,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/s
 Wink = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/WinkVipCrack.js
 
 #AlightMotion
-AlightMotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,requires-body=true,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/AlightMotion.js
+AlightMotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,requires-body=true,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/module/AlightMotion.js
 
 #Sandbox Pixel Art
 http-response https://api.sandbox.love/accounts/current script-path = https://shoptnetz.com/shadowrocket/SandBox.js, requires-body=true, timeout=5, tag=Sandbox Pixel Art
 
 #SoundCloudGo+
-SoundCloudGo+ = type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/soundcloud.js
+SoundCloudGo+ = type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/module/soundcloud.js
 
 #Lightroom
 Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v\d\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/module/lightroom.js,script-update-interval=-1
@@ -89,8 +89,8 @@ iScreenn = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verify
 #Usage
 Usage = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/Usage.js
 
-#MeituPic
-MeituPic = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://shoptnetz.com/shadowrocket/MeiTuXiuXiu.js
+#Meitu
+Meitu = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/module/meitu.js
 
 #Truecaller
 Truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products\/apple),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
