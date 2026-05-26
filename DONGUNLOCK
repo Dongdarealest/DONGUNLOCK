@@ -14,6 +14,7 @@ ipv6 = false
 update-url = https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/DONGUNLOCK
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
+
 AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
 [Header Rewrite]
