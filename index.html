@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DONGUNLOCK - Premium All-in-One</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header-container">
+      <h1>DONG<span>UNLOCK</span></h1>
+      <div id="theme-switch" class="theme-switch" onclick="toggleTheme()" title="Đổi giao diện">
+        <div class="switch-thumb" id="theme-icon">🌙</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content" style="flex-direction: column; gap: 20px;">
+    
+    <div class="status-container">
+      <div class="status-item"><span class="status-label">VERSION</span><strong id="app-version" class="status-value">V1.0.2</strong></div>
+      <div class="status-divider"></div>
+      <div class="status-item"><span class="status-label">TOTAL SUCCESS</span><strong id="total-users" class="status-value" style="color: #6366f1;">0</strong></div>
+      <div class="status-divider"></div>
+      <div class="status-item"><span class="status-label">SERVER PING</span><strong id="server-ping" class="status-value" style="color: #10b981;"><span class="ping-dot"></span> -- ms</strong></div>
+    </div>
+
+    <div class="dialog-container">
+      
+      <div class="step-progress">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span class="progress-txt" id="progress-text">TIẾN TRÌNH: 01 / 06</span>
+          <span class="progress-percent" id="progress-percent">16%</span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" id="progress-bar-fill"></div></div>
+      </div>
+
+      <div class="step active" id="step-1">
+        <h2>DONGUNLOCK System</h2>
+        <p>Hệ thống cấu hình mạng can thiệp sâu, mở khóa đặc quyền Premium cho <span class="highlight-text">hàng loạt ứng dụng</span>.</p>
+        
+        <div class="feature-list">
+          <div class="feature-item"><div class="feature-icon"></div><div class="feature-text"><strong>Giải trí Đỉnh cao</strong><span>YouTube Premium, Spotify, SoundCloud Go+.</span></div></div>
+          <div class="feature-item"><div class="feature-icon"></div><div class="feature-text"><strong>Mạng xã hội & Liên lạc</strong><span>Locket Gold, TrueCaller Premium.</span></div></div>
+          <div class="feature-item"><div class="feature-icon"></div><div class="feature-text"><strong>Chỉnh sửa Chuyên nghiệp</strong><span>Lightroom, PicsArt, AlightMotion, BeautyPlus.</span></div></div>
+          <div class="feature-item"><div class="feature-icon"></div><div class="feature-text"><strong>Bảo mật & Tối ưu</strong><span>Giải mã MITM cục bộ, Custom DNS, không lưu nhật ký.</span></div></div>
+        </div>
+
+        <div class="changelog-container">
+          <div class="changelog-header"><span class="changelog-dot"></span><strong>NHẬT KÝ CẬP NHẬT REALTIME</strong></div>
+          <div class="changelog-content" id="changelog-text">Đang đồng bộ luồng dữ liệu từ GitHub...</div>
+        </div>
+
+        <div class="disclaimer"><p>⚠️ Lưu ý: Một số chức năng có thể ngừng hoạt động tùy thuộc vào các bản vá bảo mật và cập nhật mới nhất của hệ điều hành.</p></div>
+        <div class="buttons"><button class="btn-primary next-only" onclick="nextStep('2')" style="width: 100%;">Bắt đầu cài đặt ➔</button></div>
+      </div>
+
+      <div class="step" id="step-2">
+        <h2>Bước 2: Hệ điều hành</h2>
+        <p>Vui lòng chọn nền tảng thiết bị của bạn:</p>
+        <div class="options">
+          <button class="btn-primary" onclick="nextStep('ios')">Apple iOS</button>
+          <button class="btn-primary" onclick="nextStep('android')">Android OS</button>
+        </div>
+        <div class="buttons"><button class="btn-secondary" onclick="prevStep('1')">Quay lại</button></div>
+      </div>
+
+      <div class="step" id="step-android">
+        <h2>Android Download</h2>
+        <p class="warning-text">⚠️ Yêu cầu: Gỡ cài đặt ứng dụng Locket gốc trước khi tiếp tục.</p>
+        <div class="download-section"><a href="https://files.modder.me/locket/Locket_Gold_v1.221.0_mod.apk" target="_blank" class="download-btn">Tải APK ngay</a></div>
+        <div class="buttons">
+          <button class="btn-secondary" onclick="prevStep('2')">Quay lại</button>
+          <button class="btn-primary btn-success" onclick="completeSetup('android')">Hoàn thành</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-ios">
+        <h2>iOS Setup</h2>
+        <p>Hệ thống yêu cầu ứng dụng Shadowrocket. Bạn đã cài đặt chưa?</p>
+        <div class="options">
+          <button class="btn-primary" onclick="nextStep('ios-next')">Đã cài đặt</button>
+          <button class="btn-secondary" onclick="nextStep('ios-download')">Chưa cài đặt</button>
+        </div>
+        <div class="buttons"><button class="btn-secondary" onclick="prevStep('2')">Quay lại</button></div>
+      </div>
+
+      <div class="step" id="step-ios-download">
+        <h2>Shadowrocket Download</h2>
+        <p class="warning-text">⚠️ Cảnh báo bảo mật: Chỉ đăng nhập vào Appstore, TUYỆT ĐỐI KHÔNG đăng nhập iCloud.</p>
+        <div class="download-section"><a href="https://dvsteam.vn/id-apple-shadowrocket" target="_blank" class="download-btn">Lấy ID Apple</a></div>
+        <div class="buttons"><button class="btn-secondary" onclick="prevStep('ios')">Quay lại</button><button class="btn-primary" onclick="nextStep('ios-next')">Tiếp theo</button></div>
+      </div>
+
+      <div class="step" id="step-ios-next">
+        <h2>Nhập Cấu Hình</h2>
+        <p>Tích hợp file cấu hình DONGUNLOCK vào hệ thống.</p>
+        <div class="download-section" style="margin-bottom: 15px;"><a href="shadowrocket://add/config?url=https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/DONGUNLOCK" class="download-btn btn-blue">Auto Import Config</a></div>
+        
+        <p style="font-size: 13px; margin-bottom: 8px; color: var(--text-muted);">Hoặc nhập thủ công (Copy URI):</p>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          <input type="text" id="configLink" value="https://raw.githubusercontent.com/Dongdarealest/DONGUNLOCK/refs/heads/main/DONGUNLOCK" readonly class="tech-input">
+          <button class="btn-primary btn-icon" onclick="copyLink()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button>
+        </div>
+        <div class="buttons" style="margin-top: 25px;"><button class="btn-secondary" onclick="prevStep('ios')">Quay lại</button><button class="btn-primary" onclick="nextStep('ios-step-3')">Tiếp theo</button></div>
+      </div>
+
+      <div class="step" id="step-ios-step-3">
+        <h2>Hướng dẫn cài đặt</h2>
+        <p class="highlight-text">Mở Shadowrocket.</p>
+        
+        <div class="css-iphone-mockup">
+          <div class="iphone-notch"></div>
+          <div class="instruction-scroll">
+            <img src="images/hd1.jpg" alt="Hướng dẫn 1" class="guide-img">
+            <p><strong>1. Chọn tab Cấu hình.</strong></p>
+            <img src="images/hd2.jpg" alt="Hướng dẫn 2" class="guide-img">
+            <p><strong>2. Nhấn dấu + (Góc phải trên).</strong></p>
+            <img src="images/hd3.jpg" alt="Hướng dẫn 3" class="guide-img">
+            <p><strong>3. Dán URL đã copy và nhấn Tải Xuống.</strong></p>
+          </div>
+        </div>
+        
+        <div class="buttons"><button class="btn-secondary" onclick="prevStep('ios-next')">Quay lại</button><button class="btn-primary" onclick="nextStep('ios-step-4')">Tiếp theo</button></div>
+      </div>
+
+      <div class="step" id="step-ios-step-4">
+        <h2>Giải mã HTTPS</h2>
+        <p class="highlight-text">Kích hoạt file cấu hình & Module.</p>
+        
+        <div class="css-iphone-mockup">
+          <div class="iphone-notch"></div>
+          <div class="instruction-scroll">
+            <img src="images/hd4.jpg" alt="Hướng dẫn 4" class="guide-img">
+            <p><strong>1. Nhấn vào DONGUNLOCK.conf.</strong></p>
+            <img src="images/hd5.jpg" alt="Hướng dẫn 5" class="guide-img">
+            <p><strong>2. Chọn "Sử dụng config".</strong></p>
+            <img src="images/hd6.jpg" alt="Hướng dẫn 6" class="guide-img">
+            <p><strong>3. Nhấn vào biểu tượng ⓘ cạnh file.</strong></p>
+            <img src="images/hd7.jpg" alt="Hướng dẫn 7" class="guide-img">
+            <p><strong>4. Nhấn "Giải mã HTTPS".</strong></p>
+            <img src="images/hd8.jpg" alt="Hướng dẫn 8" class="guide-img">
+            <p><strong>5. Gạt bật thanh "Giải mã HTTPS".</strong></p>
+            <img src="images/hd9.jpg" alt="Hướng dẫn 9" class="guide-img">
+            <p><strong>6. Chọn "Cài đặt chứng chỉ CA...".</strong></p>
+            <img src="images/hd10.jpg" alt="Hướng dẫn 10" class="guide-img">
+            <p><strong>7. Nhấn Cho phép.</strong></p>
+          </div>
+        </div>
+        
+        <div class="buttons"><button class="btn-secondary" onclick="prevStep('ios-step-3')">Quay lại</button><button class="btn-primary" onclick="nextStep('ios-step-5')">Tiếp theo</button></div>
+      </div>
+
+      <div class="step" id="step-ios-step-5">
+        <h2>Cài đặt Chứng chỉ CA</h2>
+        <p class="highlight-text">Tin cậy cấu hình trên hệ thống iOS.</p>
+        
+        <div class="css-iphone-mockup">
+          <div class="iphone-notch"></div>
+          <div class="instruction-scroll">
+            <img src="images/hd11.jpg" alt="Hướng dẫn 11" class="guide-img">
+            <p><strong>1. Vào Cài đặt iPhone ➔ Đã tải về hồ sơ.</strong></p>
+            <img src="images/hd12.jpg" alt="Hướng dẫn 12" class="guide-img">
+            <p><strong>2. Nhấn Cài đặt ➔ Nhập mã PIN.</strong></p>
+            <img src="images/hd13.jpg" alt="Hướng dẫn 13" class="guide-img">
+            <p><strong>3. Nhấn Cài đặt.</strong></p>
+            <img src="images/hd14.jpg" alt="Hướng dẫn 14" class="guide-img">
+            <p><strong>4. Vào Cài đặt chung ➔ Giới thiệu.</strong></p>
+            <img src="images/hd15.jpg" alt="Hướng dẫn 15" class="guide-img">
+            <p><strong>5. Chọn "Cài đặt tin cậy chứng nhận".</strong></p>
+            <img src="images/hd16.jpg" alt="Hướng dẫn 16" class="guide-img">
+            <p><strong>6. Gạt xanh công tắc chứng chỉ.</strong></p>
+          </div>
+        </div>
+        
+        <div class="buttons"><button class="btn-secondary" onclick="prevStep('ios-step-4')">Quay lại</button><button class="btn-primary" onclick="nextStep('ios-step-6')">Tiếp theo</button></div>
+      </div>
+
+      <div class="step" id="step-ios-step-6">
+        <h2>Khởi động hệ thống</h2>
+        <p class="highlight-text">Bật VPN để hoàn tất đặc quyền.</p>
+        
+        <div class="css-iphone-mockup">
+          <div class="iphone-notch"></div>
+          <div class="instruction-scroll">
+            <img src="images/hd17.jpg" alt="Hướng dẫn 17" class="guide-img">
+            <p><strong>1. Quay lại Shadowrocket và bật công tắc kết nối.</strong></p>
+          </div>
+        </div>
+        
+        <div class="buttons">
+          <button class="btn-secondary" onclick="prevStep('ios-step-5')">Quay lại</button>
+          <button class="btn-primary btn-success" onclick="completeSetup('ios')">Hoàn thành</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <button class="btn-issue-float" onclick="openGitHubIssue()" title="Báo lỗi hoặc Góp ý">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="issue-icon-svg"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+    <span>Báo Lỗi / Góp Ý</span>
+  </button>
+
+  <div id="toast">
+    <div class="toast-content">
+      <div class="toast-icon-wrapper" id="toast-icon-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="toast-svg"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <span id="toast-text-content">Thông báo hệ thống</span>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <p>System by <strong>DONGUNLOCK</strong> &copy; 2026. All operations secured.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <div id="network-overlay">
+  <div class="network-alert-icon">⚠️</div>
+  <h2>MẤT KẾT NỐI MẠNG</h2>
+  <p>Vui lòng kiểm tra lại Wi-Fi hoặc 4G để tiếp tục cài đặt.</p>
+</div>
+</body>
+</html>
