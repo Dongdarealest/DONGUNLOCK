@@ -1,0 +1,23 @@
+{
+  "name": "dongunlock",
+  "version": "1.0.0",
+  "description": "https://dongunlock.vercel.app/",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dongdarealest/DONGUNLOCK.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dongdarealest/DONGUNLOCK/issues"
+  },
+  "homepage": "https://github.com/Dongdarealest/DONGUNLOCK#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
